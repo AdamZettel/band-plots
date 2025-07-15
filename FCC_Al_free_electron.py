@@ -52,8 +52,7 @@ for i in range(-max_index, max_index + 1):
     for j in range(-max_index, max_index + 1):
         for k in range(-max_index, max_index + 1):
             G_vec = i*b1 + j*b2 + k*b3
-            if np.linalg.norm(G_vec) < 20 * 2 * np.pi / a:
-                G_vectors.append(G_vec)
+            G_vectors.append(G_vec)
 
 # Calculate energies in eV
 E_bands = []
